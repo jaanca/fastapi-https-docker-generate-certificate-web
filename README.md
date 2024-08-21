@@ -5,6 +5,9 @@ Run an api in FastAPI through a web browser with a self-signed https certificate
 Tested by running the uvicorn console, debugging with vscode and activating the service in docker linux.
 
 # Generate self signed certificate
+
+The following commands were tested on a Linux server
+
 ```console
 openssl genrsa -out example.com.key 2048
 openssl req -new -key example.com.key -out example.com.csr -subj "/CN=*.example.com"
