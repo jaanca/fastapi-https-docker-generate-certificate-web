@@ -25,8 +25,18 @@ openssl pkcs12 -export -out example.com.pfx -inkey example.com.key -in example.c
 
 # Start server and test in web browser
 
-## Add to local hosts the route to : C:\Windows\System32\drivers\etc\hosts
+## Add to local hosts the route
+
+- For Windows: C:\Windows\System32\drivers\etc\hosts
+- For Linux: /etc/hosts
+
 127.0.0.1 example.com www.example.com
+
+### Test new route
+
+```console
+ping example.com
+```
 
 ## Install certificate in browser, example: Firefox
 Tools -> Settings -> Privacy and Security -> Security: View Certificates
