@@ -31,6 +31,7 @@ openssl pkcs12 -export -out example.com.pfx -inkey example.com.key -in example.c
 ## Install certificate in browser, example: Firefox
 Tools -> Settings -> Privacy and Security -> Security: View Certificates
 Import: Select the pfx file: example.com.pfx
+Use the key written above: Enter the export password
 
 ## Run web server
 ```console
